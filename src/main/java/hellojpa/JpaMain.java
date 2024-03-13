@@ -14,12 +14,24 @@ public class JpaMain {
 
         try {
 
-            // Persistence Context
+            // flush
 
-            Member member = em.find(Member.class, 100L);
-            member.setName("ㅎㅎ");
+            Member member = new Member(200L, "나는 플러시에요");
+            em.persist(member);
 
-            // dirty checking
+//            em.flush();
+
+            System.out.println("==================");
+
+            String jpql = "SELECT m FROM Member m WHERE m.id = :id";
+            Member fm = em.createQuery(jpql, Member.class)
+                    .setParameter("id", 200)
+                    .getSingleResult();
+
+            System.out.println(fm.getName());
+
+            System.out.println("==================");
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
