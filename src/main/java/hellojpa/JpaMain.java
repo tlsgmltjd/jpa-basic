@@ -14,25 +14,22 @@ public class JpaMain {
 
         try {
 
-            // flush
+            // 비영속
+            Member member = new Member();
+            member.setId(1L);
+            member.setName("USER_A");
 
-            Member member = new Member(200L, "나는 플러시에요");
+            // 영속
+            // em.persist() 가 디비에 저장하는게 아니다. em의 영속성 컨텍스트 안에 넣어서 관리되는 것이다.
+            System.out.println("=============== BEFORE");
             em.persist(member);
+            System.out.println("=============== AFTER");
 
-//            em.flush();
+            // 준영속
+            // 엔티티 객체를 영속성 컨텍스트에서 분리시킨다.
+//            em.detach(member);
 
-            System.out.println("==================");
-
-            String jpql = "SELECT m FROM Member m WHERE m.id = :id";
-            Member fm = em.createQuery(jpql, Member.class)
-                    .setParameter("id", 200)
-                    .getSingleResult();
-
-            System.out.println(fm.getName());
-
-            System.out.println("==================");
-
-            tx.commit();
+            tx.commit(); // 트랜잭션이 커밋되는 순간 영속성 컨텍스트에서 관리되는 엔티티가 디비에 반영된다.
         } catch (Exception e) {
             tx.rollback();
         } finally {

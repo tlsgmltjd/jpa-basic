@@ -5,9 +5,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c80301b-4608-4bf7-aa06-e0db3158ad25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/controller/dto/request/AuthSendCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/controller/dto/response/AuthCallBackCodeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/controller/dto/response/ReissueTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/controller/dto/response/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/service/GauthLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/service/MessageSendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/service/TokenReissueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/service/impl/GauthLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/auth/service/impl/TokenReissueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/bet/controller/BetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/bet/controller/dto/BetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/bet/service/BetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/bet/service/impl/BetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/controller/dto/request/CoinRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/controller/dto/response/CoinCountResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/controller/dto/response/CoinResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/controller/dto/response/DailyRouletteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/CoinTossCountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/CoinTossService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/DailyRouletteRollService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/impl/CoinTossCountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/impl/CoinTossServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/game/service/impl/DailyRouletteRollServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/health/HealthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/controller/MatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/controller/dto/response/MatchInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/controller/dto/response/MatchResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/controller/dto/response/MatchResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/service/MatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/match/service/impl/MatchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/controller/dto/request/TeamBadmintonSaveRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/controller/dto/request/TeamFollowRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/controller/dto/response/TeamListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/TeamBadmintonSaveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/TeamFollowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/TeamGetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/impl/TeamBadmintonSaveServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/impl/TeamFollowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/team/service/impl/TeamGetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/user/dto/response/BetMatchInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/user/dto/response/BetMatchResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/user/dto/response/BetMatchResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/user/service/QueryUserBetMatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/domain/user/service/impl/QueryUserBetMatchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/common/CalculatePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/common/CalculatePointRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/common/CalculatePointResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/config/GauthFeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/facade/UserFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/FeignClientErrorDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/GauthInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/GauthToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/dto/GauthTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/dto/GauthTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/dto/GauthUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/feign/dto/UserSchoolRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/security/jwt/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-api/src/main/java/team/gsmgogo/global/security/jwt/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/config/SchedulerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/exception/TokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/exception/model/ExceptionResponseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/jwt/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/jwt/dto/TokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/jwt/filter/ErrorObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/principle/AuthDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/global/principle/AuthDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/AlertJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/CalculateMatchResultJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/ResetCountJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/controller/BatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/controller/dto/CalculateMatchResultRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/job/validator/CalculateMatchValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/scheduler/AlertScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-batch/src/main/java/team/gsmgogo/scheduler/ResetScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/auth/entity/RefreshTokenRedisEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/auth/entity/VerifyCodeRedisEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/auth/repository/RefreshTokenJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/auth/repository/VerifyCodeJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/game/entity/GameEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/game/enums/CoinStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/game/repository/GameJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/game/repository/GameQueryDslRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/match/repository/MatchQueryDslRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/matchresult/repository/MatchResultQueryDslRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/team/enums/BadmintonRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/user/enums/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709372767272</updated>
       <workItem from="1709372768972" duration="22770000" />
-      <workItem from="1710252181097" duration="9099000" />
+      <workItem from="1715185013632" duration="1756000" />
     </task>
     <servers />
   </component>
