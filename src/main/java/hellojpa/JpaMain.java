@@ -15,7 +15,7 @@ public class JpaMain {
         try {
 
             // 비영속
-            Member member = new Member();
+            Member2 member = new Member2();
             member.setId(1L);
             member.setName("USER_A");
 

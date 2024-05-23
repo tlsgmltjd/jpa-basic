@@ -102,9 +102,16 @@
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/matchresult/repository/MatchResultQueryDslRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/team/enums/BadmintonRank.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/user/enums/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/RoleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +198,8 @@
       <workItem from="1709372768972" duration="22770000" />
       <workItem from="1715185013632" duration="2584000" />
       <workItem from="1715656009940" duration="68000" />
-      <workItem from="1716136832383" duration="1059000" />
+      <workItem from="1716136832383" duration="2956000" />
+      <workItem from="1716367003974" duration="1868000" />
     </task>
     <servers />
   </component>
