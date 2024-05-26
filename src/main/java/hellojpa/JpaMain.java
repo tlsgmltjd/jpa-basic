@@ -16,8 +16,8 @@ public class JpaMain {
 
             // 비영속
             Member2 member = new Member2();
-            member.setId(1L);
-            member.setName("USER_A");
+//            member.setId(1L);
+            member.setName("USER_A2");
 
             // 영속
             // em.persist() 가 디비에 저장하는게 아니다. em의 영속성 컨텍스트 안에 넣어서 관리되는 것이다.
