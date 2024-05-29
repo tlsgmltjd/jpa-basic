@@ -1,2 +1,5 @@
-package jpabook;public enum OrderStatus {
+package jpabook;
+
+public enum OrderStatus {
+    ORDER, CANCEL
 }

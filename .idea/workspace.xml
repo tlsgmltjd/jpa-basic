@@ -102,13 +102,23 @@
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/matchresult/repository/MatchResultQueryDslRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/team/enums/BadmintonRank.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/user/enums/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Member2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/Member2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/RoleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/RoleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/RoleType.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +128,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -151,13 +162,31 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jpabook" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.jpabook.JpaMain">
     <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hellojpa.JpaMain" />
+      <option name="MAIN_CLASS_NAME" value="hellojpa.jpaBasic.JpaMain" />
       <module name="ex1-hello-jpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hellojpa.*" />
+          <option name="PATTERN" value="hellojpa.jpaBasic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jpabook.JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jpabook.JpaMain" />
+      <module name="ex1-hello-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jpabook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,6 +209,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jpabook.JpaMain" />
         <item itemvalue="Application.JpaMain" />
       </list>
     </recent_temporary>
@@ -196,7 +226,7 @@
       <workItem from="1715185013632" duration="2584000" />
       <workItem from="1715656009940" duration="68000" />
       <workItem from="1716136832383" duration="2956000" />
-      <workItem from="1716367003974" duration="4472000" />
+      <workItem from="1716367003974" duration="8737000" />
     </task>
     <servers />
   </component>
