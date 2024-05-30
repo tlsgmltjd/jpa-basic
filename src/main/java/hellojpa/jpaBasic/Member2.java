@@ -6,14 +6,14 @@ import jakarta.persistence.*;
 //@SequenceGenerator(
 //        name = "member_seq_generator",
 //        sequenceName = "member_seq")
-@TableGenerator(
+@SequenceGenerator(
         name = "MEMBER_SEQ_GENERATOR",
-        table = "MY_SEQUENCES",
-        pkColumnValue = "MEMBER_SEQ", allocationSize = 1)
+        sequenceName = "MY_SEQUENCES",
+        allocationSize = 3)
 public class Member2 {
     @Id
 //    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_seq_generator")
-    @GeneratedValue(strategy = GenerationType.TABLE, generator = "MEMBER_SEQ_GENERATOR")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ_GENERATOR")
     private Long id;
     @Column(name = "user_name", length = 10)
     private String name;

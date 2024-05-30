@@ -19,6 +19,32 @@ public class JpaMain {
 //            member.setId(1L);
             member.setName("USER_A2");
 
+
+            Member2 member2 = new Member2();
+            member2.setName("USER_A2");
+
+
+            Member2 member3 = new Member2();
+            member3.setName("USER_A2");
+
+
+            Member2 member4 = new Member2();
+            member4.setName("USER_A2");
+
+
+            Member2 member5 = new Member2();
+            member5.setName("USER_A2");
+
+
+            Member2 member6 = new Member2();
+            member6.setName("USER_A2");
+
+            em.persist(member2);
+            em.persist(member3);
+            em.persist(member4);
+            em.persist(member5);
+            em.persist(member6);
+
             // 영속
             // em.persist() 가 디비에 저장하는게 아니다. em의 영속성 컨텍스트 안에 넣어서 관리되는 것이다.
             System.out.println("=============== BEFORE");
