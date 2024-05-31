@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+import java.time.LocalDateTime;
+
 public class JpaMain {
     public static void main(String[] args) {
 
@@ -16,10 +18,12 @@ public class JpaMain {
 
         try {
 
-            Order order = em.find(Order.class, 1L);
-            Long memberId = order.getMemberId();
+            Member member = new Member(null, "신희성", "1", "1", "1");
+            Order order = new Order(null, member, LocalDateTime.now(), OrderStatus.ORDER);
+            em.persist(member);
+            em.persist(order);
 
-            Member member = em.find(Member.class, memberId);
+            System.out.println(" == : " + em.find(Order.class, 1L).getMember().getName());
 
             tx.commit();
         } catch (Exception e) {

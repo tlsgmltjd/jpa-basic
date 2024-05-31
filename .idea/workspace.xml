@@ -102,23 +102,14 @@
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/matchresult/repository/MatchResultQueryDslRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/team/enums/BadmintonRank.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/user/enums/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/Member2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/RoleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/jpaBasic/RoleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/RoleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Order.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +217,7 @@
       <workItem from="1715185013632" duration="2584000" />
       <workItem from="1715656009940" duration="68000" />
       <workItem from="1716136832383" duration="2956000" />
-      <workItem from="1716367003974" duration="8737000" />
+      <workItem from="1716367003974" duration="11364000" />
     </task>
     <servers />
   </component>

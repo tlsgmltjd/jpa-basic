@@ -9,10 +9,22 @@ public class Order {
     @Id @GeneratedValue
     @Column(name = "order_id")
     private Long id;
-    private Long memberId;
+    @ManyToOne // 주문 : 회원 = N : 1
+    @JoinColumn(name = "team_id")
+    private Member member;
     private LocalDateTime orderDate;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
+
+    public Order() {
+    }
+
+    public Order(Long id, Member member, LocalDateTime orderDate, OrderStatus orderStatus) {
+        this.id = id;
+        this.member = member;
+        this.orderDate = orderDate;
+        this.orderStatus = orderStatus;
+    }
 
     public Long getId() {
         return id;
@@ -22,12 +34,12 @@ public class Order {
         this.id = id;
     }
 
-    public Long getMemberId() {
-        return memberId;
+    public Member getMember() {
+        return member;
     }
 
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
+    public void setMember(Member member) {
+        this.member = member;
     }
 
     public LocalDateTime getOrderDate() {

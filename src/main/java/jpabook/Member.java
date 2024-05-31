@@ -15,6 +15,17 @@ public class Member {
     private String street;
     private String zipcode;
 
+    public Member() {
+    }
+
+    public Member(Long id, String name, String city, String street, String zipcode) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
+
     public Long getId() {
         return id;
     }
