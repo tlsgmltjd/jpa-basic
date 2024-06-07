@@ -1,9 +1,6 @@
 package jpabook;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class OrderItem {
@@ -12,8 +9,9 @@ public class OrderItem {
     private Long id;
     @Column(name = "order_id")
     private Long orderId;
-    @Column(name = "item_id")
-    private Long itemId;
+    @ManyToOne
+    @JoinColumn(name = "item_id")
+    private Item item;
     private int orderPrice;
     private int count;
 
@@ -33,12 +31,12 @@ public class OrderItem {
         this.orderId = orderId;
     }
 
-    public Long getItemId() {
-        return itemId;
+    public Item getItem() {
+        return item;
     }
 
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public int getOrderPrice() {

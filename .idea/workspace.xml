@@ -104,12 +104,9 @@
       <change afterPath="$PROJECT_DIR$/../gsm-gogo-v2/gsmgogo-entity/src/main/java/team/gsmgogo/domain/user/enums/Gender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +214,8 @@
       <workItem from="1715185013632" duration="2584000" />
       <workItem from="1715656009940" duration="68000" />
       <workItem from="1716136832383" duration="2956000" />
-      <workItem from="1716367003974" duration="11364000" />
+      <workItem from="1716367003974" duration="12046000" />
+      <workItem from="1718288070236" duration="2018000" />
     </task>
     <servers />
   </component>
