@@ -11,22 +11,18 @@ public class Order {
     @Id @GeneratedValue
     @Column(name = "order_id")
     private Long id;
-    @ManyToOne // 주문 : 회원 = N : 1
-    @JoinColumn(name = "member_id")
-    private Member member;
     private LocalDateTime orderDate;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
-
-    @OneToMany(mappedBy = "order")
-    private List<OrderItem> orderItems = new ArrayList<>();
+    @ManyToOne // 일대다 양방향 매핑.. 강제로 읽기전용으로 만듬
+    @JoinColumn(name = "member_id", insertable = false, updatable = false)
+    private Member member;
 
     public Order() {
     }
 
-    public Order(Long id, Member member, LocalDateTime orderDate, OrderStatus orderStatus) {
+    public Order(Long id, LocalDateTime orderDate, OrderStatus orderStatus) {
         this.id = id;
-        this.member = member;
         this.orderDate = orderDate;
         this.orderStatus = orderStatus;
     }
@@ -37,14 +33,6 @@ public class Order {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Member getMember() {
-        return member;
-    }
-
-    public void setMember(Member member) {
-        this.member = member;
     }
 
     public LocalDateTime getOrderDate() {

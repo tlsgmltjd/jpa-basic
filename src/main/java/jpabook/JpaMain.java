@@ -19,11 +19,11 @@ public class JpaMain {
         try {
 
             Member member = new Member(null, "신희성", "1", "1", "1");
-            Order order = new Order(null, member, LocalDateTime.now(), OrderStatus.ORDER);
+            Order order = new Order(null, LocalDateTime.now(), OrderStatus.ORDER);
+            member.getOrders().add(order);
+
             em.persist(member);
             em.persist(order);
-
-            System.out.println(" == : " + em.find(Order.class, 1L).getMember().getName());
 
             tx.commit();
         } catch (Exception e) {
