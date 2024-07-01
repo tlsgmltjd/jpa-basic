@@ -19,3 +19,5 @@ R
 "src/main/java/jpabook/Product.java,3/b/3bd4b7bc6e4e30e03ec3e3f1ecc697bb3adcffb1
 V
 &src/main/java/jpabook/MemberOrder.java,7/e/7e926cfcfab03ac08b8d8cfd2861bcfbf2a020d6
+X
+(src/main/java/jpabook/MemberProduct.java,c/3/c35a8b49d9fb20a55473dbd5b3275343785f04b5
