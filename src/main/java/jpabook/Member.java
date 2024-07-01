@@ -15,6 +15,10 @@ public class Member {
     private String street;
     private String zipcode;
 
+    @OneToOne // 일대일 매핑 -> 외래키에 데이터베이스 유니크 제약조건이 걸림 (일대일 관계를 유지하기 위헤)
+    @JoinColumn(name = "locker_id")
+    private Locker locker;
+
     @OneToMany // 일대다 매핑 (1쪽이 연관관계의 주인..)
     @JoinColumn(name = "member_id") // @JoinColumn을 꼭 해야함 -> 중간테이블이 생겨버림(JoinTable)
     private List<Order> orders = new ArrayList<>();
