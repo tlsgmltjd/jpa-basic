@@ -15,3 +15,7 @@ T
 $src/main/java/jpabook/OrderItem.java,8/1/81a1ef6497ca447d3749b45eb75969245d97ae2e
 Q
 !src/main/java/jpabook/Locker.java,3/e/3eafcfc1b2fb33b393c632b64c59f8c7ac189765
+R
+"src/main/java/jpabook/Product.java,3/b/3bd4b7bc6e4e30e03ec3e3f1ecc697bb3adcffb1
+V
+&src/main/java/jpabook/MemberOrder.java,7/e/7e926cfcfab03ac08b8d8cfd2861bcfbf2a020d6
