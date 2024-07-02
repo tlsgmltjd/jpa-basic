@@ -2,6 +2,9 @@ package jpabook;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Item {
     @Id @GeneratedValue
@@ -10,6 +13,9 @@ public class Item {
     private String name;
     public int price;
     private int stackQuantity;
+
+    @ManyToMany(mappedBy = "items")
+    private List<Category> categories = new ArrayList<>();
 
     public Long getId() {
         return id;

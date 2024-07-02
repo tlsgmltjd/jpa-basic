@@ -18,6 +18,10 @@ public class Order {
     @JoinColumn(name = "member_id", insertable = false, updatable = false)
     private Member member;
 
+    @OneToOne
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
+
     public Order() {
     }
 

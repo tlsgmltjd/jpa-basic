@@ -17,7 +17,11 @@ Q
 !src/main/java/jpabook/Locker.java,3/e/3eafcfc1b2fb33b393c632b64c59f8c7ac189765
 R
 "src/main/java/jpabook/Product.java,3/b/3bd4b7bc6e4e30e03ec3e3f1ecc697bb3adcffb1
-V
-&src/main/java/jpabook/MemberOrder.java,7/e/7e926cfcfab03ac08b8d8cfd2861bcfbf2a020d6
 X
 (src/main/java/jpabook/MemberProduct.java,c/3/c35a8b49d9fb20a55473dbd5b3275343785f04b5
+S
+#src/main/java/jpabook/Delivery.java,9/8/98837cee650fc28e58885e7c066eaca86ce3c0b1
+Y
+)src/main/java/jpabook/DeliveryStatus.java,5/b/5b147810368584bb3c94a7c1818ee8697b01f10d
+S
+#src/main/java/jpabook/Category.java,0/2/0248f351ba8b7d171755f85dee07c649c22c74db
