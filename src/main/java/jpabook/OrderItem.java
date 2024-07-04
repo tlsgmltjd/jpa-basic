@@ -1,17 +1,18 @@
 package jpabook;
 
 import jakarta.persistence.*;
+import jpabook.InheritanceMapping.Gift;
 
 @Entity
-public class OrderItem {
+public class OrderItem extends BaseEntity {
     @Id @GeneratedValue
     @Column(name = "order_item_id")
     private Long id;
     @Column(name = "order_id")
     private Long orderId;
     @ManyToOne
-    @JoinColumn(name = "item_id")
-    private Item item;
+    @JoinColumn(name = "gift_id")
+    private Gift gift;
     private int orderPrice;
     private int count;
 
@@ -31,12 +32,12 @@ public class OrderItem {
         this.orderId = orderId;
     }
 
-    public Item getItem() {
-        return item;
+    public Gift getGift() {
+        return gift;
     }
 
-    public void setItem(Item item) {
-        this.item = item;
+    public void setGift(Gift gift) {
+        this.gift = gift;
     }
 
     public int getOrderPrice() {

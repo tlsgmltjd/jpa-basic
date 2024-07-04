@@ -1,12 +1,13 @@
 package jpabook;
 
 import jakarta.persistence.*;
+import jpabook.InheritanceMapping.Gift;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Category {
+public class Category extends BaseEntity {
     @Id @GeneratedValue
     private Long id;
 
@@ -22,8 +23,8 @@ public class Category {
     @ManyToMany
     @JoinTable(name = "category_item",
             joinColumns = @JoinColumn(name = "category_id"),
-            inverseJoinColumns = @JoinColumn(name = "item_id")
+            inverseJoinColumns = @JoinColumn(name = "gifts_id")
     )
-    private List<Item> items = new ArrayList<>();
+    private List<Gift> gifts = new ArrayList<>();
 
 }

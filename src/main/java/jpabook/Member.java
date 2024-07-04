@@ -7,6 +7,9 @@ import java.util.List;
 
 @Entity
 public class Member extends BaseEntity {
+    @Id @GeneratedValue
+    @Column(name = "member_id")
+    private Long id;
     private String name;
     private String city;
     private String street;
@@ -43,11 +46,19 @@ public class Member extends BaseEntity {
     }
 
     public Member(Long id, String name, String city, String street, String zipcode) {
-        super.setId(id);
+        this.id = id;
         this.name = name;
         this.city = city;
         this.street = street;
         this.zipcode = zipcode;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

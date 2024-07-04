@@ -4,6 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jpabook.InheritanceMapping.Book;
 import jpabook.InheritanceMapping.Movie;
 
 import java.time.LocalDateTime;
@@ -19,14 +20,11 @@ public class JpaMain {
 
         try {
 
-            Member member = new Member();
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("ㄱㅇㅎ");
 
-            member.setName("안녕");
-
-            member.setCreateBy("kim");
-            member.setCreateDate(LocalDateTime.now());
-
-            em.persist(member);
+            em.persist(book);
 
             tx.commit();
         } catch (Exception e) {

@@ -1,9 +1,9 @@
 
-E
-java:S1068"(Remove this unused "city" private field.(“øÌà8üáŠ‡2
-G
-java:S1068"*Remove this unused "street" private field.(›¸8üáŠ‡2
-M
-java:S1068"+Remove this unused "zipcode" private field.(‚Ûõ¢ûÿÿÿÿ8üáŠ‡2
-G
-java:S1068"*Remove this unused "status" private field.(ŒàÉÛ8üáŠ‡2
+k
+java:S1068"(Remove this unused "city" private field.(“øÌà8üáŠ‡2J$979533d4-56e6-439d-9d11-e5b1ebcf6417
+m
+java:S1068"*Remove this unused "street" private field.(›¸8üáŠ‡2J$34a04175-64e6-4d96-8ef6-796cde1fcaed
+s
+java:S1068"+Remove this unused "zipcode" private field.(‚Ûõ¢ûÿÿÿÿ8üáŠ‡2J$dff0d695-f4fe-4821-a5a0-69081f3a3da0
+m
+java:S1068"*Remove this unused "status" private field.(ŒàÉÛ8üáŠ‡2J$d3609e5e-e787-4b7d-aca5-cfc0d2266a53
