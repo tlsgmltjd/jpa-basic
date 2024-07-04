@@ -35,3 +35,5 @@ c
 3src/main/java/jpabook/InheritanceMapping/Movie.java,c/f/cffe525412d2cb4baf80b7e75dd63f819b00b251
 b
 2src/main/java/jpabook/InheritanceMapping/Book.java,a/f/af953cb260de9062c40418f10cdcea5f90094549
+U
+%src/main/java/jpabook/BaseEntity.java,c/4/c4d1a2b2f5798c02c1fecaef346eee29716ee3fe

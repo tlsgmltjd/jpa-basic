@@ -122,20 +122,21 @@
       <change afterPath="$PROJECT_DIR$/../java/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java/src/TEST.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/InheritanceMapping/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/InheritanceMapping/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/InheritanceMapping/Gift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/InheritanceMapping/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/InheritanceMapping/Gift.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/InheritanceMapping/Gift.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Member.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +248,7 @@
       <workItem from="1718288070236" duration="2344000" />
       <workItem from="1719470805309" duration="1423000" />
       <workItem from="1719818113269" duration="2921000" />
-      <workItem from="1719888147590" duration="5948000" />
+      <workItem from="1719888147590" duration="6743000" />
     </task>
     <servers />
   </component>
