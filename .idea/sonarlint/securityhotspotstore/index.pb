@@ -25,3 +25,13 @@ Y
 )src/main/java/jpabook/DeliveryStatus.java,5/b/5b147810368584bb3c94a7c1818ee8697b01f10d
 S
 #src/main/java/jpabook/Category.java,0/2/0248f351ba8b7d171755f85dee07c649c22c74db
+O
+src/main/java/jpabook/Gift.java,2/8/28597123ddfbfb03785232537ae52154196d3c72
+b
+2src/main/java/jpabook/InheritanceMapping/Gift.java,c/a/caaab1a91c81bbd19e3380c86b945bbeff9f0dbd
+c
+3src/main/java/jpabook/InheritanceMapping/Album.java,f/f/ffe1242aad12dff03bea35592d05742d0137a4e9
+c
+3src/main/java/jpabook/InheritanceMapping/Movie.java,c/f/cffe525412d2cb4baf80b7e75dd63f819b00b251
+b
+2src/main/java/jpabook/InheritanceMapping/Book.java,a/f/af953cb260de9062c40418f10cdcea5f90094549
