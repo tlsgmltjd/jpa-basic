@@ -15,9 +15,12 @@ public class Member extends BaseEntity {
     private String street;
     private String zipcode;
 
-    @OneToOne // 일대일 매핑 -> 외래키에 데이터베이스 유니크 제약조건이 걸림 (일대일 관계를 유지하기 위헤)
-    @JoinColumn(name = "locker_id")
-    private Locker locker;
+    @OneToMany(mappedBy = "member")
+    private List<Team> teams;
+
+    public List<Team> getTeams() {
+        return teams;
+    }
 
 //    @ManyToMany // 다대다 매핑 -> 객체 관점에서는 가능하지만 테이블 관점에서는 불가능한 매핑, 중간 테이블로 일대다 다대일로 풀어서 매핑됨
     // 편리해보이지만 실무에서 사용하면 안된다.. 중간 테이블은 연결 목적으로만 존재하지 않는다.

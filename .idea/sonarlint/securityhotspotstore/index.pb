@@ -9,8 +9,6 @@ R
 ,src/main/java/hellojpa/jpaBasic/JpaMain.java,9/3/9307d4aa11da2aac4f5c337a21e2554c5d9289ca
 P
  src/main/java/jpabook/Order.java,5/b/5ba119434b7d57cfe0c556c1c7c2fce65a11bc98
-O
-src/main/java/jpabook/Item.java,4/b/4b40b89c78c59c6caf8ce96b9b27d0c2d754fd3a
 T
 $src/main/java/jpabook/OrderItem.java,8/1/81a1ef6497ca447d3749b45eb75969245d97ae2e
 Q
@@ -25,8 +23,6 @@ Y
 )src/main/java/jpabook/DeliveryStatus.java,5/b/5b147810368584bb3c94a7c1818ee8697b01f10d
 S
 #src/main/java/jpabook/Category.java,0/2/0248f351ba8b7d171755f85dee07c649c22c74db
-O
-src/main/java/jpabook/Gift.java,2/8/28597123ddfbfb03785232537ae52154196d3c72
 b
 2src/main/java/jpabook/InheritanceMapping/Gift.java,c/a/caaab1a91c81bbd19e3380c86b945bbeff9f0dbd
 c
@@ -37,3 +33,5 @@ b
 2src/main/java/jpabook/InheritanceMapping/Book.java,a/f/af953cb260de9062c40418f10cdcea5f90094549
 U
 %src/main/java/jpabook/BaseEntity.java,c/4/c4d1a2b2f5798c02c1fecaef346eee29716ee3fe
+O
+src/main/java/jpabook/Team.java,6/2/627cd86135e19c92876c6da9f3e7058a102282fa
