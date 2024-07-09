@@ -15,14 +15,19 @@ public class Member extends BaseEntity {
     private String street;
     private String zipcode;
 
-    @OneToMany(mappedBy = "member")
-    private List<Team> teams;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "team_id")
+    private Team team;
 
-    public List<Team> getTeams() {
-        return teams;
+    public Team getTeam() {
+        return team;
     }
 
-//    @ManyToMany // 다대다 매핑 -> 객체 관점에서는 가능하지만 테이블 관점에서는 불가능한 매핑, 중간 테이블로 일대다 다대일로 풀어서 매핑됨
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+    //    @ManyToMany // 다대다 매핑 -> 객체 관점에서는 가능하지만 테이블 관점에서는 불가능한 매핑, 중간 테이블로 일대다 다대일로 풀어서 매핑됨
     // 편리해보이지만 실무에서 사용하면 안된다.. 중간 테이블은 연결 목적으로만 존재하지 않는다.
     // 생성시간, 수정시간 등등 같은 메타 데이터를 저장할 수가 없다. (매핑 정보만 담긴다.)
     // 쿼리가 예상할 수 없다. 중간 테이블 때문에 조인 쿼리 같은게 예상치 못하게 나갈 수 있다.

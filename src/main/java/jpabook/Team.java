@@ -2,6 +2,8 @@ package jpabook;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Team {
     @Id @GeneratedValue
@@ -11,9 +13,8 @@ public class Team {
     @Column(name = "team_name")
     private String teamName;
 
-    @ManyToOne
-    @JoinColumn(name = "member_id")
-    private Member member;
+    @OneToMany(mappedBy = "team")
+    private List<Member> members;
 
     public Long getId() {
         return id;
@@ -31,20 +32,6 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public Member getMember() {
-        return member;
-    }
-
-    public void setMember(Member member) {
-        this.member = member;
-    }
-
     public Team() {
-    }
-
-    public Team(Long id, String teamName, Member member) {
-        this.id = id;
-        this.teamName = teamName;
-        this.member = member;
     }
 }

@@ -1,11 +1,9 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8‹Ô ‰2J$d6fec3a7-eb1f-475f-96db-80078690cdd6
-r	java:S106"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8ŒÔ ‰2J$eaf6771b-792c-4c30-a59c-6f7d33039ab0
-r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ŒÔ ‰2J$b2f99f23-9e36-43b6-8ab0-1b79830d788d
+r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8á»”¬‰2J$530e029b-9d00-4ad0-8fe7-5f2eda99383a
+r	java:S106"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8á»”¬‰2J$4610ef20-02b1-4eee-94e2-b9c5d75d14de
+r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8á»”¬‰2J$9b24634d-1dae-43ef-947a-4c7d6e877899
 o
-java:S1481"'Remove this unused "m1" local variable.(¥´ÿÿÿÿÿ8ŒÔ ‰2J$df36657f-ceaa-45d5-b183-6e0137624015
-ƒ	java:S125!"<This block of commented-out lines of code should be removed.(›İ£¤ûÿÿÿÿ8ŒÔ ‰2J$a511cc4b-90c7-46cf-90e3-faefeb5f7b6f
-m	java:S106("+Replace this use of System.out by a logger.(ê„ô8ŒÔ ‰2J$0be389fa-f2fd-4204-8b65-6a04c6c14c7b
-m	java:S1065"+Replace this use of System.out by a logger.(†ñÍ¶8ŒÔ ‰2J$3e24cd87-b10c-43fb-80de-a06e1033a83f
-ƒ	java:S125+"<This block of commented-out lines of code should be removed.(èäÜùÿÿÿÿ8ŒÔ ‰2J$ce98256c-cf9e-4154-b368-a47a4b168f22
-m	java:S1068"+Replace this use of System.out by a logger.(¯»ö8ŒÔ ‰2J$7451300d-e443-44ef-8415-96c7224644f9
+java:S14813",Remove this unused "members" local variable.(û¥²ª8«•¬‰2J$ee4eda88-7611-4503-8cf6-0dd42a0db3ae
+~	java:S1256"<This block of commented-out lines of code should be removed.(¢‡¯“8ÔÁŸ¬‰2J$b77c7a01-0e96-42e6-9c6d-857ff4b88678
+w
+java:S1128"4Remove this unused import 'org.hibernate.Hibernate'.(óñ‹è8ËË¦¬‰2J$b11e45dd-a004-4341-a7c2-26c1ba551b2d

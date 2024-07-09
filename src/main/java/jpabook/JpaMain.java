@@ -3,6 +3,8 @@ package jpabook;
 import jakarta.persistence.*;
 import org.hibernate.Hibernate;
 
+import java.util.List;
+
 public class JpaMain {
     public static void main(String[] args) {
 
@@ -21,42 +23,41 @@ public class JpaMain {
             Member member1 = new Member();
             member1.setName("안녕안녕 1");
 
+            Member member2 = new Member();
+            member2.setName("안녕안녕 2");
+
+            Team team1 = new Team();
+            team1.setTeamName("팀팀 1");
+
+            Team team2 = new Team();
+            team2.setTeamName("팀팀 2");
+
+            member1.setTeam(team1);
+            member2.setTeam(team2);
+
+            em.persist(team1);
             em.persist(member1);
 
-            em.flush();
-            em.clear();
-
-            Member m1 = em.find(Member.class, member1.getId());
-
-            // 영속성 컨텍스트를 먼저 조회하기 때문에 엔티티가 영속성 컨텍스트에 있다면 그걸 반환해줌
-            // JPA는 한 트랜잭션, 영속성 컨텍스트에서 조회한 엔티티의 동일성을 보장해줌
-//            Member reference1 = em.getReference(Member.class, m1.getId());
-//            System.out.println(reference1.getClass());
+            em.persist(team2);
+            em.persist(member2);
 
             em.flush();
             em.clear();
 
-            Member ref = em.getReference(Member.class, member1.getId()); // proxy
-            System.out.println("ref.getClass() = " + ref.getClass());
 
-            /*
-            em.detach(ref);
+            // JPQL은 SQL로 바로 번역되기 때문에 아래 내용과 같이 Member 엔티티 조회 후
+            // TEAM 필드가 EAGER로 설정되어있는것을 확인하고 쿼리를 한번 더 날린 후 엔티티를 초기화한다.
+            // -> EAGER여도 N + 1이 발생함
+            List<Member> members = em.createQuery("select m from Member m", Member.class)
+                    .getResultList();
 
-            ref.getName(); // could not initialize proxy exception
+            // select * from member;
+            // select * from Team where Team.memberId = memberId; // Team이 EAGER로 설정되어있기 때문에 팀 조회 쿼리가 따로 발생
 
-            // 프록시 객체가 영속성 컨텍스트에서 관리되지 않는다면
-            // 해당 객체를 참조해서 타켓 객체를 초기화하려 할때 예외가 발생한다.
-            */
+            // 앤간해서는 지연로딩으로 설정해주는것이 좋음
+            // @XXXToOne 시리즈는 기본 패치 타입이 EAGER여서 꼭 LAZY로 설정해주자
+            // 즉시로딩은 예측하기 어려운 쿼리가 나간다
 
-
-            // 프록시 관련 유틸 기능
-            System.out.println(emf.getPersistenceUnitUtil().isLoaded(ref)); // 프록시 초기화 여부
-
-            // 프록시 클래스 확인: class jpabook.Member$HibernateProxy$1W1cl9JZ
-            System.out.println(ref.getClass());
-
-            // 강제 초기화
-            Hibernate.initialize(ref);
 
             tx.commit();
         } catch (Exception e) {
