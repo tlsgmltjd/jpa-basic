@@ -14,13 +14,16 @@ public class Order extends BaseEntity {
     private LocalDateTime orderDate;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
-    @ManyToOne // 일대다 양방향 매핑.. 강제로 읽기전용으로 만듬
+    @ManyToOne(fetch = FetchType.LAZY) // 일대다 양방향 매핑.. 강제로 읽기전용으로 만듬
     @JoinColumn(name = "member_id", insertable = false, updatable = false)
     private Member member;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     public Order() {
     }
