@@ -37,3 +37,7 @@ Q
 !src/main/java/jpabook/Parent.java,1/b/1bc52b173f306883d02fdc2eeb4a2ec8eaba50bc
 P
  src/main/java/jpabook/Child.java,4/d/4d41b1c9aec5970b98fa1dd10de966f933971ff2
+Q
+!src/main/java/jpabook/Period.java,7/0/701084f7668f8234060b1ab32d2cbfb1b4db9c3d
+R
+"src/main/java/jpabook/Address.java,9/e/9e68065c44f36f065baae907a85f194ddd97949e

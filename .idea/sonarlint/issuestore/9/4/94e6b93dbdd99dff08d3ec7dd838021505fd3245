@@ -1,2 +1,12 @@
 
-~	java:S125#"<This block of commented-out lines of code should be removed.(—Õóâ8Ú»Š¬‰2J$04e69453-bd19-4db5-b008-c40a5c7c64f6
+…
+java:S1710"BRemove the 'AttributeOverrides' wrapper from this annotation group(¢Ñ‘ä8á×…»‰2J$2ba571fc-7269-4c2f-a7fa-2fcd10f1adf2
+…
+java:S1710$"BRemove the 'AttributeOverrides' wrapper from this annotation group(¢Ñ‘ä8§¥ˆ»‰2J$4de345bc-4840-4bb1-851f-26052edbda63
+˜	java:S116)"VRename this field "WorkAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ïƒı8â×…»‰2J$c935e1ec-b0f9-4be1-b63c-87fd0225fb78
+|
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¦–‰»‰2J$ef1308d0-dfc7-4b71-ab5a-3cd5bcfdd035
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¨–‰»‰2J$902f11cc-d2b8-4f5f-81a4-12c14c4cf982
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ª–‰»‰2J$9e02fc5d-59f2-43ee-ba8b-4035762ec625

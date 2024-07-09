@@ -13,9 +13,6 @@ public class Team {
     @Column(name = "team_name")
     private String teamName;
 
-    @OneToMany(mappedBy = "team")
-    private List<Member> members;
-
     public Long getId() {
         return id;
     }

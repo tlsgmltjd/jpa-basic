@@ -8,7 +8,7 @@ public class OrderItem extends BaseEntity {
     @Id @GeneratedValue
     @Column(name = "order_item_id")
     private Long id;
-    @Column(name = "order_id")
+    @Column(name = "order_row_id")
     private Long orderId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "gift_id")
