@@ -11,8 +11,6 @@ P
  src/main/java/jpabook/Order.java,5/b/5ba119434b7d57cfe0c556c1c7c2fce65a11bc98
 T
 $src/main/java/jpabook/OrderItem.java,8/1/81a1ef6497ca447d3749b45eb75969245d97ae2e
-Q
-!src/main/java/jpabook/Locker.java,3/e/3eafcfc1b2fb33b393c632b64c59f8c7ac189765
 R
 "src/main/java/jpabook/Product.java,3/b/3bd4b7bc6e4e30e03ec3e3f1ecc697bb3adcffb1
 X
@@ -35,3 +33,7 @@ U
 %src/main/java/jpabook/BaseEntity.java,c/4/c4d1a2b2f5798c02c1fecaef346eee29716ee3fe
 O
 src/main/java/jpabook/Team.java,6/2/627cd86135e19c92876c6da9f3e7058a102282fa
+Q
+!src/main/java/jpabook/Parent.java,1/b/1bc52b173f306883d02fdc2eeb4a2ec8eaba50bc
+P
+ src/main/java/jpabook/Child.java,4/d/4d41b1c9aec5970b98fa1dd10de966f933971ff2

@@ -16,48 +16,24 @@ public class JpaMain {
 
         try {
 
-            System.out.println();
-            System.out.println("=======================");
-            System.out.println();
+            Parent parent = new Parent();
 
-            Member member1 = new Member();
-            member1.setName("안녕안녕 1");
+            Child child1 = new Child();
+            Child child2 = new Child();
 
-            Member member2 = new Member();
-            member2.setName("안녕안녕 2");
+            parent.addChild(child1);
+            parent.addChild(child2);
 
-            Team team1 = new Team();
-            team1.setTeamName("팀팀 1");
+            em.persist(parent);
+            // 영속성 전이: cascade = PERSIST로 설정시 부모 엔티티가 영속화되면 자식엔티티들이 설정되어있으면 자동으로 영속화됨
 
-            Team team2 = new Team();
-            team2.setTeamName("팀팀 2");
+            em.flush(); em.clear();
 
-            member1.setTeam(team1);
-            member2.setTeam(team2);
+            Parent findParent = em.find(Parent.class, parent.getId());
+            // findParent.getChildren().remove(0); // orphanRemoval 속성으로 부모 엔티티와 연관관계가 끊어진 자식 엔티는 자동으로 delete
 
-            em.persist(team1);
-            em.persist(member1);
-
-            em.persist(team2);
-            em.persist(member2);
-
-            em.flush();
-            em.clear();
-
-
-            // JPQL은 SQL로 바로 번역되기 때문에 아래 내용과 같이 Member 엔티티 조회 후
-            // TEAM 필드가 EAGER로 설정되어있는것을 확인하고 쿼리를 한번 더 날린 후 엔티티를 초기화한다.
-            // -> EAGER여도 N + 1이 발생함
-            List<Member> members = em.createQuery("select m from Member m", Member.class)
-                    .getResultList();
-
-            // select * from member;
-            // select * from Team where Team.memberId = memberId; // Team이 EAGER로 설정되어있기 때문에 팀 조회 쿼리가 따로 발생
-
-            // 앤간해서는 지연로딩으로 설정해주는것이 좋음
-            // @XXXToOne 시리즈는 기본 패치 타입이 EAGER여서 꼭 LAZY로 설정해주자
-            // 즉시로딩은 예측하기 어려운 쿼리가 나간다
-
+            // 위의 고아객체 삭제 기능을 활성화하면 부모를 제거해도 자식은 사라진다. <- cascade = REMOVE 처럼 동작한다.
+            em.remove(findParent);
 
             tx.commit();
         } catch (Exception e) {

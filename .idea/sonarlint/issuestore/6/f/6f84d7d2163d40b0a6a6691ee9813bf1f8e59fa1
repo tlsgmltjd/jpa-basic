@@ -1,9 +1,5 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8á»”¬‰2J$530e029b-9d00-4ad0-8fe7-5f2eda99383a
-r	java:S106"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8á»”¬‰2J$4610ef20-02b1-4eee-94e2-b9c5d75d14de
-r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8á»”¬‰2J$9b24634d-1dae-43ef-947a-4c7d6e877899
-o
-java:S14813",Remove this unused "members" local variable.(û¥²ª8«•¬‰2J$ee4eda88-7611-4503-8cf6-0dd42a0db3ae
-~	java:S1256"<This block of commented-out lines of code should be removed.(¢‡¯“8ÔÁŸ¬‰2J$b77c7a01-0e96-42e6-9c6d-857ff4b88678
 w
-java:S1128"4Remove this unused import 'org.hibernate.Hibernate'.(óñ‹è8ËË¦¬‰2J$b11e45dd-a004-4341-a7c2-26c1ba551b2d
+java:S1128"4Remove this unused import 'org.hibernate.Hibernate'.(óñ‹è8¨à°‰2J$0c2a4be0-fea6-4f73-b585-029b1e5067d9
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ªà°‰2J$1386dc74-a028-4a5a-87e2-b5046a1cd960
