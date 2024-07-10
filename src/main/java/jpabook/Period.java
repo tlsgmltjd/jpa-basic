@@ -13,15 +13,15 @@ public class Period {
         return stateDate;
     }
 
-    public void setStateDate(LocalDateTime stateDate) {
-        this.stateDate = stateDate;
-    }
-
     public LocalDateTime getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(LocalDateTime endDate) {
+    public Period(LocalDateTime stateDate, LocalDateTime endDate) {
+        this.stateDate = stateDate;
         this.endDate = endDate;
+    }
+
+    public Period() {
     }
 }

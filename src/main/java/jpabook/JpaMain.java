@@ -19,14 +19,8 @@ public class JpaMain {
 
             Member member = new Member();
 
-            Address address = new Address();
-            address.setCity("Asd");
-            address.setZipcode("Asd");
-            address.setStreet("Asd");
-
-            Period period = new Period();
-            period.setStateDate(LocalDateTime.now());
-            period.setEndDate(LocalDateTime.now());
+            Address address = new Address("A", "B", "C");
+            Period period = new Period(LocalDateTime.now(), LocalDateTime.now());
 
             member.setPeriod(period);
             member.setHomeAddress(address);

@@ -122,29 +122,16 @@
       <change afterPath="$PROJECT_DIR$/../java/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java/src/TEST.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/Period.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/627cd86135e19c92876c6da9f3e7058a102282fa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/627cd86135e19c92876c6da9f3e7058a102282fa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Delivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Delivery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Period.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
