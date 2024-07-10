@@ -1,0 +1,6 @@
+
+l	java:S106$"+Replace this use of System.out by a logger.(øáÊ8º˜…Ó‰2J$35a6e0ab-183e-4ac1-a244-eb44eb1f4373
+w
+java:S1128"4Remove this unused import 'org.hibernate.Hibernate'.(óñ‹è8“Û…Ó‰2J$004db2ea-127a-4155-8d23-96d22fe2ab62
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8“Û…Ó‰2J$1d6b0377-4ec7-4ef1-81d9-cd09a05a7fc6

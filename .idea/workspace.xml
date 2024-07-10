@@ -127,11 +127,11 @@
       <change beforePath="$PROJECT_DIR$/../java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f84d7d2163d40b0a6a6691ee9813bf1f8e59fa1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94e6b93dbdd99dff08d3ec7dd838021505fd3245" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Period.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
