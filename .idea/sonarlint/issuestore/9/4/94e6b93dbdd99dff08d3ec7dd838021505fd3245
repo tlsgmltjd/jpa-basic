@@ -1,12 +1,4 @@
 
-_
-java:S1710"BRemove the 'AttributeOverrides' wrapper from this annotation group(¢Ñ‘ä8«¶¢Ã‰2
-_
-java:S1710$"BRemove the 'AttributeOverrides' wrapper from this annotation group(¢Ñ‘ä8«¶¢Ã‰2
-r	java:S116)"VRename this field "WorkAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ïƒý8«¶¢Ã‰2
-V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¯¶¢Ã‰2
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¯¶¢Ã‰2
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¯¶¢Ã‰2
+~	java:S1258"<This block of commented-out lines of code should be removed.(êÑÇÐ8¥êº‰Š2J$489463db-9c07-463d-bf5a-b22ff7b6a7af
+|
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8³£¿Ó‰2J$224314b7-ae7f-47b0-b27d-150f1a343414
