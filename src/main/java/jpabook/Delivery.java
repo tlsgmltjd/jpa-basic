@@ -13,5 +13,5 @@ public class Delivery extends BaseEntity {
     private DeliveryStatus status;
 
     @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
-    private Order order;
+    private OrderJpa order;
 }

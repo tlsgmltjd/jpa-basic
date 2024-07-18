@@ -6,7 +6,7 @@
 //
 //@Entity
 //@Table(name = "test")
-//public class Member {
+//public class MemberJpa {
 //    @Id
 //    private Long id;
 //    @Column(name = "name")

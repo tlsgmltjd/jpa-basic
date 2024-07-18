@@ -18,7 +18,7 @@ public class OrderItem extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
-    private Order order;
+    private OrderJpa order;
 
     public Long getId() {
         return id;

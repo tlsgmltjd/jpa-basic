@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity @Table(name = "orders")
-public class Order extends BaseEntity {
+public class OrderJpa extends BaseEntity {
     @Id @GeneratedValue
     @Column(name = "order_id")
     private Long id;
@@ -16,7 +16,7 @@ public class Order extends BaseEntity {
     private OrderStatus orderStatus;
     @ManyToOne(fetch = FetchType.LAZY) // 일대다 양방향 매핑.. 강제로 읽기전용으로 만듬
     @JoinColumn(name = "member_id", insertable = false, updatable = false)
-    private Member member;
+    private MemberJpa member;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "delivery_id")
@@ -25,10 +25,10 @@ public class Order extends BaseEntity {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
-    public Order() {
+    public OrderJpa() {
     }
 
-    public Order(Long id, LocalDateTime orderDate, OrderStatus orderStatus) {
+    public OrderJpa(Long id, LocalDateTime orderDate, OrderStatus orderStatus) {
         this.id = id;
         this.orderDate = orderDate;
         this.orderStatus = orderStatus;

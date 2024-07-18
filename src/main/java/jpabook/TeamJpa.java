@@ -2,10 +2,8 @@ package jpabook;
 
 import jakarta.persistence.*;
 
-import java.util.List;
-
 @Entity
-public class Team {
+public class TeamJpa {
     @Id @GeneratedValue
     @Column(name = "team_id")
     private Long id;
@@ -29,6 +27,6 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public Team() {
+    public TeamJpa() {
     }
 }

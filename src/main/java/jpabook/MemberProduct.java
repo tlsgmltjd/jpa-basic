@@ -14,11 +14,11 @@ public class MemberProduct { // 중간 테이블을 엔티티로 승격 (N:M -> 
     // 매핑 정보
     @ManyToOne
     @JoinColumn(name = "member_id")
-    private Member member;
+    private MemberJpa member;
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    private Product product;
+    private ProductJpa product;
 
     // 주문에 대한 메타 데이터들...
     private int count;

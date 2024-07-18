@@ -41,3 +41,21 @@ Q
 !src/main/java/jpabook/Period.java,7/0/701084f7668f8234060b1ab32d2cbfb1b4db9c3d
 R
 "src/main/java/jpabook/Address.java,9/e/9e68065c44f36f065baae907a85f194ddd97949e
+N
+src/main/java/jpql/Member.java,e/a/ead98430e2d109285da55ccb7104a4bb09edb75b
+L
+src/main/java/jpql/Team.java,c/8/c853ec6c8e04d0c966d79bcfbc98bdb75a69e3ac
+O
+src/main/java/jpql/JpaMain.java,9/f/9f24ef356e6b68f862086b0de6fe8df81b754b15
+T
+$src/main/java/jpabook/MemberJpa.java,2/5/258e6b18f9ef205bb7b33932c4ccdabefa051595
+R
+"src/main/java/jpabook/TeamJpa.java,6/4/64341cfb03cc7840f501222af135f3df6ae31e25
+S
+#src/main/java/jpabook/OrderJpa.java,4/3/43b88b7d3c6472f907c192bef66cec2e42ead252
+M
+src/main/java/jpql/Order.java,b/f/bf1f82841040997b0badd6ea58d1260aaf8da3d8
+O
+src/main/java/jpql/Address.java,e/9/e9551705f4093a365e21dde8b5618d23f25e140f
+O
+src/main/java/jpql/Product.java,1/0/10ab83bba40df9acbbefd884d73bafd648e888b2

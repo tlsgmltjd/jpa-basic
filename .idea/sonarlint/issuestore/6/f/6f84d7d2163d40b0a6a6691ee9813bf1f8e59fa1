@@ -1,9 +1,3 @@
 
-~	java:S125"<This block of commented-out lines of code should be removed.(ë†÷–8Ùæ­‹2J$eb8710a6-6695-4a50-9f10-e1c44a434f56
-r	java:S1061"+Replace this use of System.out by a logger.(Òº·¸øÿÿÿÿ8Ùæ­‹2J$f1f95f8d-d0fc-4a05-a0d9-08ba05b71b35
-w
-java:S1128"4Remove this unused import 'org.hibernate.Hibernate'.(óñ‹è8Ùæ­‹2J$b60ac75e-d1b8-4c4b-a953-daddeef08883
-|
-java:S1128	"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8Ùæ­‹2J$8e4267b8-c719-41e1-9d4c-2a4d1c52c526
-r
-java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Ùæ­‹2J$8b19f0dd-9bdc-4790-ab0a-57fe17ae7550
+~	java:S125"<This block of commented-out lines of code should be removed.(ë†÷–8Ùæ­‹2J$2ff3e53f-e4d5-414d-b03f-d918618deecc
+r	java:S106."+Replace this use of System.out by a logger.(Òº·¸øÿÿÿÿ8Ùæ­‹2J$3b9a400f-5a73-4271-98c1-e767fa20d53d

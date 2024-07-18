@@ -2,14 +2,13 @@ package jpabook;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 @Entity
-public class Member {
+public class MemberJpa {
     @Id
     @GeneratedValue
     @Column(name = "member_id")
@@ -29,7 +28,7 @@ public class Member {
     )
     private List<Address> addressHistory = new ArrayList<>();
 
-    public Member() {
+    public MemberJpa() {
 
     }
 
@@ -92,7 +91,7 @@ public class Member {
         this.name = name;
     }
 
-    public Member(String name) {
+    public MemberJpa(String name) {
         this.name = name;
     }
 }
