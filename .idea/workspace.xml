@@ -134,8 +134,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/JpaMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jpabook/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpabook/Member.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +252,8 @@
       <workItem from="1720285824737" duration="598000" />
       <workItem from="1720422322481" duration="7909000" />
       <workItem from="1720503606987" duration="5625000" />
-      <workItem from="1720690096287" duration="3247000" />
+      <workItem from="1720690096287" duration="4269000" />
+      <workItem from="1721026241087" duration="3236000" />
     </task>
     <servers />
   </component>

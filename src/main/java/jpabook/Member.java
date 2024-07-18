@@ -29,6 +29,10 @@ public class Member {
     )
     private List<Address> addressHistory = new ArrayList<>();
 
+    public Member() {
+
+    }
+
     public Set<String> getFavoriteFoods() {
         return favoriteFoods;
     }
@@ -85,6 +89,10 @@ public class Member {
     }
 
     public void setName(String name) {
+        this.name = name;
+    }
+
+    public Member(String name) {
         this.name = name;
     }
 }

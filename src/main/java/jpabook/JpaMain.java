@@ -1,6 +1,9 @@
 package jpabook;
 
 import jakarta.persistence.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import org.hibernate.Hibernate;
 
 import java.time.LocalDateTime;
@@ -18,36 +21,38 @@ public class JpaMain {
 
         try {
 
-            Member member = new Member();
-            member.setName("ASd");
-            member.setAddressHistory(List.of(new Address("Asd", "ASd", "Asd"),
-                    new Address("Aㅇㄴㅁㅇㄴㅇsd", "ASd", "Asd")));
-            member.getFavoriteFoods().add("A");
-            member.getFavoriteFoods().add("B");
-            member.getFavoriteFoods().add("C");
-
+            Member member = new Member("kim ju en");
             em.persist(member);
 
-            em.flush();
-            em.clear();
+//            List<Member> resultList = em.createQuery("select m from Member m where m.name LIKE '%kim%'")
+//                    .getResultList();
+//
+//            for (Member m : resultList) {
+//                System.out.println(m.getName());
+//            }
 
-            System.out.println("------------");
-            Member findMember = em.find(Member.class, member.getId()); // 컬렉션 값 타입은 기본적으로 지연로딩이 됨
-            System.out.println("------------");
+            // criteria
+            // String이 아닌 자바코드로 JPQL을 작성할 수 있다. JPQL 빌더 역할임
+            // 하지만 너무 복잡하고 실용성이 없다 가독성이 낮고 유지보수성 낮음
+            // QueryDSL 쓰자
+            // QueryDSL도 자바 코드로 JPQL을 작성할 수 있고 컴파일시 문법 오류를 찾을 수 있다.
+            // 동적 쿼리 작성이 편하고 단순하다! 실무사용권장
+            CriteriaBuilder cb = em.getCriteriaBuilder();
+            CriteriaQuery<Member> query = cb.createQuery(Member.class);
+            Root<Member> m = query.from(Member.class);
 
-            Set<String> favoriteFoods = findMember.getFavoriteFoods();
-            for (String favoriteFood : favoriteFoods) {
-                System.out.println(favoriteFood);
+            CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("name"), "kim ju en"));
+            List<Member> members = em.createQuery(cq)
+                    .getResultList();
+
+            for (Member member1 : members) {
+                System.out.println("member1 = " + member1);
             }
 
-            // 값 타입을 수정하고 싶으면 각각의 값 타입은 불변해야하기 때문에 갈아끼워야함
-            // 하지만 값 타입은 추적하기 어렵다 (모든 컬럼을 PK로 잡아야함)
-            // 그렇기 때문에 컬렉션을 수정한다면... 연관되어있는 엔티티가 가지고 있는 모든 컬렉션을 삭제하고 현재 있는 모든 컬렉션 데이터를 다시 insert 한다.
-            // -> 결론. 쓰지 말자. OrderColumn으로 해결 가능하긴 하지만 이것도 예측 불가능하게 동작한다. 일대다 관계를 고려
+            // JPQL로는 해결할 수 없는 특정 디비에 의존적인 문법을 사용할때 네이티브 SQL을 날릴 수 있도록 지원해준다.
 
-            // equals 로 비교해서 동일한 것이라면 삭제 (equals, hashcode를 잘 구현해두었기 때문)
-            findMember.getAddressHistory().remove(new Address("Asd", "ASd", "Asd"));
-            findMember.getAddressHistory().add(new Address("NEW", "ASd", "Asd"));
+            em.createNativeQuery("select NAME from member", Member.class)
+                    .getResultList();
 
             tx.commit();
         } catch (Exception e) {
