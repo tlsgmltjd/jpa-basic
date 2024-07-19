@@ -1,6 +1,7 @@
 package jpql;
 
 import jakarta.persistence.*;
+import jpql.dto.MemberDto;
 
 import java.util.List;
 
@@ -15,30 +16,34 @@ public class JpaMain {
 
         try {
 
+            // 프로젝션 - select 절에 조회할 대상을 지정하는것
+            // 엔티티, 임베디드, 스칼라 타입이 프로젝션 대상이될 수 있음
             Member member = new Member();
-            member.setUsername("신희성");
-            member.setAge(18);
+            member.setUsername("123");
+            member.setAge(10);
             em.persist(member);
 
-            // 반환 타입이 명확할 때
-            TypedQuery<Member> tQuery = em.createQuery("select m from Member m", Member.class);
-            // 반환 타입이 명확하지 않을 때
-            Query query = em.createQuery("select m.username, m.age from Member m where m.id = 1");
+            em.flush();
+            em.clear();
 
-            List<Member> resultList = tQuery.getResultList();
-            for (Member member1 : resultList) {
-                System.out.println("member1 = " + member1);
-            }
-
-            Object singleResult = query.getSingleResult();
-            System.out.println("singleResult = " + singleResult);
-
-            // setParameter로 파라미터 지정가능, 메서드 체이닝하면 좋다
-            List<Member> resultList1 = em.createQuery("select m from Member m where m.username = :username", Member.class)
-                    .setParameter("username", "신희성")
+            // 엔티티 타입 프로젝션으로 엔티티를 조회해오면 영속성 컨텍스트에 관리된다.
+            List<Member> members1 = em.createQuery("select m from Member m", Member.class)
                     .getResultList();
-            for (Member member1 : resultList1) {
-                System.out.println("asdasd = " + member1.getUsername());
+
+            members1.get(0).setAge(100);
+
+            // 임베디드 타입 프로젝션
+            em.createQuery("select o.address from Order o", Address.class)
+                    .getResultList();
+
+            // 스칼라 타입 프로젝션
+            // Query 타입으로 조회(Object), Dto 객체로 바로 조회하기 (new 키워드 사용해서)
+            List<MemberDto> resultList = em.createQuery("select distinct new jpql.dto.MemberDto(m.username, m.age) from Member m", MemberDto.class)
+                    .getResultList();
+
+            for (MemberDto memberDto : resultList) {
+                System.out.println("memberDto.getUsername() = " + memberDto.getUsername());
+                System.out.println("memberDto.getAge() = " + memberDto.getAge());
             }
 
 

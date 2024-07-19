@@ -59,3 +59,5 @@ O
 src/main/java/jpql/Address.java,e/9/e9551705f4093a365e21dde8b5618d23f25e140f
 O
 src/main/java/jpql/Product.java,1/0/10ab83bba40df9acbbefd884d73bafd648e888b2
+U
+%src/main/java/jpql/dto/MemberDto.java,f/a/fa97ec597f55327d3738a6d70863c883570d42cc
