@@ -1,3 +1,4 @@
 
-r	java:S106-"+Replace this use of System.out by a logger.(¸ûÖ¦üÿÿÿÿ8ş‚¼ÆŒ2J$6c5b4cfc-a48c-4b54-8c84-c9113784489c
-m	java:S106."+Replace this use of System.out by a logger.(¬Èé8‘›½ÆŒ2J$8d8c7946-2ad3-4a08-91a4-cbedb480029c
+r	java:S106&"+Replace this use of System.out by a logger.(Òº·¸øÿÿÿÿ8Éæ©¦2J$83d5dd66-a5ca-4a44-a0e0-faf46667cf95
+q
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8Ëæ©¦2J$617990d4-9017-48f9-a572-ea3b9e343b07
