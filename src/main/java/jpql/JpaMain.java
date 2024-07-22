@@ -19,6 +19,7 @@ public class JpaMain {
             Member member = new Member();
             member.setUsername("gg");
             member.setAge(10);
+            member.setType(MemberType.ADMIN);
 
             Team team = new Team();
             team.setName("gg");
@@ -31,12 +32,18 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            // 서브쿼리 - 네이티브 쿼리와 같이 사용 가능
-            // JPA 표준 스펙에서는 where, having 절에서만 서브쿼리 가능
-            // 하이버네이트에서는 select 절 서브쿼리도 지원해줌
-            // FROM 절 서브쿼리는 JPQL에서 지원하지 않음.. 조인으로 풀어서 해결 -> 최신버전은 가능하다고는 함
-            em.createQuery("select m from Member m where m.age > (select avg(m.age) from Member m)")
+            // 기타 표현과 기타식
+            // 문자, 숫자, boolean, ENUM(페키지명까지 포함해야함)
+            // type(e) = Entity 상속 관계에서 사용
+            Query query = em.createQuery("select 'HELLO', true, 10L from Member m");
+
+            List<Member> members = em.createQuery("select m from Member m " +
+                            "where jpql.MemberType.ADMIN = m.type", Member.class)
                     .getResultList();
+
+            for (Member member1 : members) {
+                System.out.println("member1 = " + member1);
+            }
 
             tx.commit();
         } catch (Exception e) {

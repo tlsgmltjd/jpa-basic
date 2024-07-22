@@ -61,3 +61,5 @@ O
 src/main/java/jpql/Product.java,1/0/10ab83bba40df9acbbefd884d73bafd648e888b2
 U
 %src/main/java/jpql/dto/MemberDto.java,f/a/fa97ec597f55327d3738a6d70863c883570d42cc
+R
+"src/main/java/jpql/MemberType.java,c/7/c789e9eab4c6e7c7a1985ba7fa137ae8ad2dd5e3

@@ -1,5 +1,6 @@
 
+r
+java:S1481&"*Remove this unused "query" local variable.(¬òíûÿÿÿÿ8„Îº¿2J$74dd3d33-f42c-4fda-99a1-97c53370246a
+r	java:S106-"+Replace this use of System.out by a logger.(Òº·¸øÿÿÿÿ8Ï´º¿2J$dd6a5e44-db4a-4e41-8cac-69fc69c04508
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8Õ†æ½2J$4eb190b5-127a-4c5e-b5bd-9bbe7b2bd903
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8äÛŠ¿2J$698f768f-28ae-47f9-8dc0-1b3b9e6d522f
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8°Æ‰À2J$1db81edf-700e-498a-9b05-fff8b717edb1
