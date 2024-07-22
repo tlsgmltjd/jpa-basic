@@ -63,3 +63,7 @@ U
 %src/main/java/jpql/dto/MemberDto.java,f/a/fa97ec597f55327d3738a6d70863c883570d42cc
 R
 "src/main/java/jpql/MemberType.java,c/7/c789e9eab4c6e7c7a1985ba7fa137ae8ad2dd5e3
+[
++src/main/java/jpql/dialect/MyH2Dialect.java,a/e/ae34492b25fc1a3aaf9e5af3054f8ce0d1ac59a4
+e
+5src/main/java/jpql/dialect/MyFunctionContributor.java,8/9/890fbc4574ae1cbf3085f03c6a2a2ccca22788aa
