@@ -1,11 +1,6 @@
 
-w
-java:S3740+"/Provide the parametrized type for this generic.(Ï¤ûÿÿÿÿÿ8ø¹«Ê2J$bfc64062-1655-4bf2-8e44-e4ac83a2527d
-w
-java:S1481+"/Remove this unused "resultList" local variable.(Ï¤ûÿÿÿÿÿ8ü¹«Ê2J$0a9a374a-1501-4ba1-961c-65120cbf0deb
-r	java:S1063"+Replace this use of System.out by a logger.(Ğö¶üÿÿÿÿ8ü¹«Ê2J$0dfb1ea5-d822-40c4-b190-40bb3d6b06d9
-m	java:S106:"+Replace this use of System.out by a logger.(õšÌú8ü¹«Ê2J$35388650-90fb-4179-ada9-9c2024a57523
+G	java:S106<"+Replace this use of System.out by a logger.(õšÌú8·¨›Ì2
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8æµ¨Ê2J$cfbbcc15-1aee-4af5-a40b-786ab3a9b43d
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É«˜Ì2J$25334eab-e072-448f-95f9-2c7a319f841d
 r
-java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8æµ¨Ê2J$005b2167-aca9-4c0e-97bd-72b23f1d46c9
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É«˜Ì2J$998f3b56-d6ac-4f68-aa25-e6cb54304403

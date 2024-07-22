@@ -39,22 +39,24 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            // concat, substring, trim, lower, upper, length, locate, abs, sort, mod, size, index
-            List resultList = em.createQuery("select substring('abc', 2, 1) from Member m")
+            // 경로 표현식
+            // 상태 필드, 단일 값 연관 필드, 컬렉션 값 연관 필드
+            // 상태 필드 - 단순히 값을 저장하는 필드, 경로 탐색의 끝이다
+            // 단일 값 연관 필드 - 묵시적 내부 조인이 발생한다, 이후 조회한 엔티티에서 또 탐색이 가능하다.
+            // 컬렉션 값 연관 필드 - 묵시적 내부 조인이 발생한다, 이후 조회한 컬렉션에 대한 탐색이 불가능하다.
+
+            // 단일 값 연관 필드 - 묵시적 내부 조인이 발생 -> 조심히 써야함, 묵시적 조인은 가급적 안 써야한다.
+            em.createQuery("select m.team from Member m")
                     .getResultList();
 
-            // 컬렉션의 size
-            List<Integer> resultList1 = em.createQuery("select size(t.members) from Team t", Integer.class)
+            // 컬렉션 값 연관 필드 - 묵시적 조인 발생, 컬렉션을 탐색했다면 해당 컬렉션 엔티티에 대한 탐색이 불가능하다!
+            em.createQuery("select t.members from Team t")
                     .getResultList();
 
-            for (Integer i : resultList1) {
-                System.out.println("i = " + i);
-            }
-
-            TypedQuery<String> query = em.createQuery("select function('group_concat', m.username) from Member m", String.class);
-            List<String> resultList2 = query.getResultList();
-
-            for (String s : resultList2) {
+            // from 절에서 명시적 조인을 통해 alias를 얻어서 탐색은 가능하다.
+            List<String> resultList = em.createQuery("select m.username from Team t join t.members m", String.class)
+                    .getResultList();
+            for (String s : resultList) {
                 System.out.println("s = " + s);
             }
 
