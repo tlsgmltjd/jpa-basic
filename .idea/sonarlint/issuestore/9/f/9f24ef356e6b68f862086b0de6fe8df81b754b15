@@ -1,6 +1,8 @@
 
-r
-java:S1481&"*Remove this unused "query" local variable.(¬òíûÿÿÿÿ8„Îº¿2J$74dd3d33-f42c-4fda-99a1-97c53370246a
-r	java:S106-"+Replace this use of System.out by a logger.(Òº·¸øÿÿÿÿ8Ï´º¿2J$dd6a5e44-db4a-4e41-8cac-69fc69c04508
+m	java:S106-"+Replace this use of System.out by a logger.(õšÌú8º£Â2J$6ae36a0a-506d-4b8a-91e9-7b96e8d8d66c
+m	java:S1067"+Replace this use of System.out by a logger.(õšÌú8¡¯Â2J$ce216dbc-b506-46b6-8872-b4b88cda4f08
+m	java:S106A"+Replace this use of System.out by a logger.(õšÌú8šö²Â2J$27a51e62-1ab3-45b5-a21c-771cef51bce7
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8°Æ‰À2J$1db81edf-700e-498a-9b05-fff8b717edb1
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8ƒ±«Â2J$c924c8aa-d277-4f4d-a125-01d8bc901a96
+r
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8ƒ±«Â2J$f8bd9ce9-3a7f-4c8b-b112-d535147f1fae

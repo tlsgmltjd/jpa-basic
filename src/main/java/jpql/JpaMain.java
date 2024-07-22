@@ -3,6 +3,7 @@ package jpql;
 import jakarta.persistence.*;
 import jpql.dto.MemberDto;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class JpaMain {
@@ -32,18 +33,38 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            // 기타 표현과 기타식
-            // 문자, 숫자, boolean, ENUM(페키지명까지 포함해야함)
-            // type(e) = Entity 상속 관계에서 사용
-            Query query = em.createQuery("select 'HELLO', true, 10L from Member m");
+            // case 식
+            TypedQuery<String> query = em.createQuery("select " +
+                    "case when m.age <= 10 then '학생요금' " +
+                    "when m.age >= 60 then '경로요금' " +
+                    "else '일반요금' end " +
+                    "from Member m", String.class);
 
-            List<Member> members = em.createQuery("select m from Member m " +
-                            "where jpql.MemberType.ADMIN = m.type", Member.class)
-                    .getResultList();
-
-            for (Member member1 : members) {
-                System.out.println("member1 = " + member1);
+            List<String> resultList = query.getResultList();
+            for (String s : resultList) {
+                System.out.println("s = " + s);
             }
+
+            em.flush();
+            em.clear();
+
+            // COALESCE null이 아니면 첫번째 인자값, null이면 두번째 인자값
+            TypedQuery<String> query2 = em.createQuery("select coalesce(m.username, '???') as username from Member m", String.class);
+            List<String> resultList1 = query2.getResultList();
+            for (String s : resultList1) {
+                System.out.println("s = " + s);
+            }
+
+            em.flush();
+            em.clear();
+
+            // NULLIF 두 인자 값이 같으면 null, 다르면 첫번째 인자값 반환
+            TypedQuery<String> query3 = em.createQuery("select nullif(m.username, 'gg') as username from Member m", String.class);
+            List<String> resultList2 = query3.getResultList();
+            for (String s : resultList2) {
+                System.out.println("s = " + s);
+            }
+
 
             tx.commit();
         } catch (Exception e) {
