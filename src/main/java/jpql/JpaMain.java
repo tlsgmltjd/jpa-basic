@@ -31,22 +31,12 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            // 조인 내부, 외부, 세타(연관관계가 없는 엔티티끼리 조인)조인 가능
-            // on절을 사용해서 조인 조건 걸 수 있음, on절로 연관관계가 없는 엔티티를 외부 조인할 수도 있음
-
-            List<Member> members = em.createQuery("select m from Member m left join m.team t on t.name = :name", Member.class)
-                    .setParameter("name", "gmg")
+            // 서브쿼리 - 네이티브 쿼리와 같이 사용 가능
+            // JPA 표준 스펙에서는 where, having 절에서만 서브쿼리 가능
+            // 하이버네이트에서는 select 절 서브쿼리도 지원해줌
+            // FROM 절 서브쿼리는 JPQL에서 지원하지 않음.. 조인으로 풀어서 해결 -> 최신버전은 가능하다고는 함
+            em.createQuery("select m from Member m where m.age > (select avg(m.age) from Member m)")
                     .getResultList();
-
-
-//            List<Member> members = em.createQuery("select m from Member m left join m.team t on t.name = :name", Member.class)
-//                    .setParameter("name", "gmg")
-//                    .getResultList();
-
-            for (Member member1 : members) {
-                System.out.println("member1 = " + member1);
-            }
-
 
             tx.commit();
         } catch (Exception e) {
