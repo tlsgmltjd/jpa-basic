@@ -1,6 +1,6 @@
 
-G	java:S106<"+Replace this use of System.out by a logger.(õšÌú8·¨›Ì2
+m	java:S106<"+Replace this use of System.out by a logger.(õšÌú8·¨›Ì2J$0676770e-4892-4b86-a8f8-e7d7d8fdc26f
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É«˜Ì2J$25334eab-e072-448f-95f9-2c7a319f841d
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É«˜Ì2J$4cf51b7e-5f26-4df6-a3ad-533e9500b6a7
 r
-java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É«˜Ì2J$998f3b56-d6ac-4f68-aa25-e6cb54304403
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É«˜Ì2J$82a6e0cc-b266-4c0d-83a0-2c335e6f38c0
