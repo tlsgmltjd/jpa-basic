@@ -17,48 +17,75 @@ public class JpaMain {
 
         try {
 
-            Member member = new Member();
-            member.setUsername("gg");
-            member.setAge(10);
-            member.setType(MemberType.ADMIN);
+            Team teamA = new Team();
+            teamA.setName("팀A");
+            Team teamB = new Team();
+            teamB.setName("팀B");
 
+            Member member1 = new Member();
+            member1.setUsername("회원1");
+            member1.setTeam(teamA);
             Member member2 = new Member();
-            member2.setUsername("fffff");
-            member2.setAge(10);
-            member2.setType(MemberType.ADMIN);
+            member2.setTeam(teamA);
+            member2.setUsername("회원2");
+            Member member3 = new Member();
+            member3.setUsername("회원3");
+            member3.setTeam(teamB);
 
-            Team team = new Team();
-            team.setName("gg");
-
-            member.changeTeam(team);
-
-            em.persist(team);
-            em.persist(member);
+            em.persist(teamA);
+            em.persist(teamB);
+            em.persist(member1);
             em.persist(member2);
+            em.persist(member3);
 
             em.flush();
             em.clear();
 
-            // 경로 표현식
-            // 상태 필드, 단일 값 연관 필드, 컬렉션 값 연관 필드
-            // 상태 필드 - 단순히 값을 저장하는 필드, 경로 탐색의 끝이다
-            // 단일 값 연관 필드 - 묵시적 내부 조인이 발생한다, 이후 조회한 엔티티에서 또 탐색이 가능하다.
-            // 컬렉션 값 연관 필드 - 묵시적 내부 조인이 발생한다, 이후 조회한 컬렉션에 대한 탐색이 불가능하다.
-
-            // 단일 값 연관 필드 - 묵시적 내부 조인이 발생 -> 조심히 써야함, 묵시적 조인은 가급적 안 써야한다.
-            em.createQuery("select m.team from Member m")
+            List<Member> members = em.createQuery("select m from Member m", Member.class)
                     .getResultList();
-
-            // 컬렉션 값 연관 필드 - 묵시적 조인 발생, 컬렉션을 탐색했다면 해당 컬렉션 엔티티에 대한 탐색이 불가능하다!
-            em.createQuery("select t.members from Team t")
-                    .getResultList();
-
-            // from 절에서 명시적 조인을 통해 alias를 얻어서 탐색은 가능하다.
-            List<String> resultList = em.createQuery("select m.username from Team t join t.members m", String.class)
-                    .getResultList();
-            for (String s : resultList) {
-                System.out.println("s = " + s);
+            for (Member member : members) {
+                System.out.println("member = " + member);
+                System.out.println("t n = " + member.getTeam().getName());
+                // 1 -> 팀A SQL 쿼리
+                // 2 -> 팀A 영속성 컨텍스트 1차 캐시
+                // 3 -> 팀B SQL 쿼리
             }
+
+            System.out.println("==================");
+
+            em.flush();
+            em.clear();
+
+            List<Member> members2 = em.createQuery("select m from Member m join fetch m.team", Member.class)
+                    .getResultList();
+            for (Member member : members2) {
+                System.out.println("member = " + member);
+                System.out.println("t n = " + member.getTeam().getName());
+            }
+
+            em.flush();
+            em.clear();
+
+            // 하이버네이트 6 이전 버전에서는 컬렉션 페치조인을 하면 데이터가 뻥튀기 되는 현상이 있었다.
+            // 아래와 같이 조인하면 쿼리 결과로 팀A 팀A 팀B 이렇게 로우를 주니까 size가 3줄이나왔다.
+            // 하이버네이트 6 버전에서부터 중복을 자동으로 제거해준다.
+
+            // DISTINCT
+            // 1. sql에 distinct, 2. 애플리케이션에서 엔티티 중복을 제거
+
+            List<Team> resultList = em.createQuery("select t from Team t join fetch t.members", Team.class)
+                    .getResultList();
+
+            for (Team team : resultList) {
+                System.out.println("data = " + team.getName() + " " + team.getMembers().size());
+            }
+
+
+            // 페치조인, 이너조인 차이
+            // 일반 조인은 실행시 연관된 엔티티를 함께 조회하지 않는다.
+            // 페치조인으르 사용할때만 연관된 엔티티도 함께 조회한다. 즉시로딩처럼
+            // 페치조인은 객체 그래프를 SQL 한번에 조회하는것
+
 
             tx.commit();
         } catch (Exception e) {

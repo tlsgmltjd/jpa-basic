@@ -1,6 +1,11 @@
 
-m	java:S106<"+Replace this use of System.out by a logger.(õšÌú8·¨›Ì2J$0676770e-4892-4b86-a8f8-e7d7d8fdc26f
+r	java:S106/"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8Ç˜ñÔ2J$25097e97-d52e-41b4-a2f5-7da2e40a4404
+r	java:S1060"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8Ç˜ñÔ2J$002e74fc-9f43-4fad-b003-754ee69a49a1
+m	java:S1066"+Replace this use of System.out by a logger.(ş»Ş8Ç˜ñÔ2J$fc9fe2e3-2721-4ae0-a862-e047dcd6b998
+r	java:S106>"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8Ç˜ñÔ2J$e553242c-6313-400c-ade8-c8b1c70578bd
+r	java:S106?"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8Ç˜ñÔ2J$33fdd2a2-b463-466b-9a02-6da83fa0f35d
+r	java:S106P"+Replace this use of System.out by a logger.(—İ¦âøÿÿÿÿ8È˜ñÔ2J$ad901f1c-3d4b-4ac2-af0d-b69be0e931e0
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É«˜Ì2J$4cf51b7e-5f26-4df6-a3ad-533e9500b6a7
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É˜ñÔ2J$fe982d81-f83c-4b5e-80eb-9fd6935fad61
 r
-java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É«˜Ì2J$82a6e0cc-b266-4c0d-83a0-2c335e6f38c0
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É˜ñÔ2J$64915eb6-07b1-4de6-8647-48da9f9771f6
