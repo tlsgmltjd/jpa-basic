@@ -2,6 +2,15 @@ package jpql;
 
 import jakarta.persistence.*;
 
+// 네임드쿼리: 쿼리에 이름을 붙혀서 재사용할 수 있는 정적 쿼리이다. 어노테이션이나 xml에 선언 가능
+// 애플리케이션 로딩 시점에 하이버네이트가 네임드 쿼리를 파싱해서 캐싱하고 있기 때문에
+// 애플리케이션 로딩 시점에 오류를 잡아준다. <- 굉장한 이점
+
+// spring data jpa의 @Query 어노테이션에 jpql 작성하면 JPA가 네임드 쿼리로 등록해준다!! 그래서 앱 로딩 시점에 오류를 잡아준다.
+@NamedQuery(
+        name = "Member.findByUsername",
+        query = "SELECT m FROM Member m where m.username = :username"
+)
 @Entity
 @Table(name = "jpql_member")
 public class Member {
