@@ -22,6 +22,18 @@ public class Team {
         return members;
     }
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "test_id")
+    private Test test;
+
+    public Test getTest() {
+        return test;
+    }
+
+    public void setTest(Test test) {
+        this.test = test;
+    }
+
     public Long getId() {
         return id;
     }
