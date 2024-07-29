@@ -129,7 +129,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f24ef356e6b68f862086b0de6fe8df81b754b15" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f24ef356e6b68f862086b0de6fe8df81b754b15" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jpql/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpql/JpaMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jpql/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jpql/Member.class" afterDir="false" />
     </list>
@@ -269,7 +268,7 @@
       <workItem from="1720422322481" duration="7909000" />
       <workItem from="1720503606987" duration="5625000" />
       <workItem from="1720690096287" duration="4269000" />
-      <workItem from="1721026241087" duration="40229000" />
+      <workItem from="1721026241087" duration="41374000" />
     </task>
     <servers />
   </component>
