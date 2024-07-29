@@ -1,6 +1,7 @@
 package jpql;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.BatchSize;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,8 @@ public class Team {
     @GeneratedValue
     private Long id;
     private String name;
+//    @BatchSize(size = 100)
+    // 글로벌 설정으로 뺌
     @OneToMany(mappedBy = "team")
     private List<Member> members = new ArrayList<>();
 

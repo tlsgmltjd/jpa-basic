@@ -1,11 +1,16 @@
 
-r	java:S106/"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8Ç˜ñÔ2J$25097e97-d52e-41b4-a2f5-7da2e40a4404
-r	java:S1060"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8Ç˜ñÔ2J$002e74fc-9f43-4fad-b003-754ee69a49a1
-m	java:S1066"+Replace this use of System.out by a logger.(ş»Ş8Ç˜ñÔ2J$fc9fe2e3-2721-4ae0-a862-e047dcd6b998
-r	java:S106>"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8Ç˜ñÔ2J$e553242c-6313-400c-ade8-c8b1c70578bd
-r	java:S106?"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8Ç˜ñÔ2J$33fdd2a2-b463-466b-9a02-6da83fa0f35d
-r	java:S106P"+Replace this use of System.out by a logger.(—İ¦âøÿÿÿÿ8È˜ñÔ2J$ad901f1c-3d4b-4ac2-af0d-b69be0e931e0
+r	java:S106/"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8¶áŠè2J$000f5de8-dbe7-4a89-beea-fdd1a20b0d10
+r	java:S1060"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8¶áŠè2J$e0840b4f-5e1e-45ca-a1b4-846fb8fbeaa8
+m	java:S1066"+Replace this use of System.out by a logger.(ş»Ş8¶áŠè2J$793a58ab-ba79-4092-9adb-bcd568a363e1
+r	java:S106>"+Replace this use of System.out by a logger.(€ÜÈ÷ûÿÿÿÿ8¶áŠè2J$c4300bc2-5af5-46f4-a831-5b69bc898f59
+r	java:S106?"+Replace this use of System.out by a logger.(ÒøËœùÿÿÿÿ8¶áŠè2J$d8ffc760-bcd6-4016-b5aa-e79a010dcf23
+r	java:S106P"+Replace this use of System.out by a logger.(—İ¦âøÿÿÿÿ8·áŠè2J$5efa1778-03c3-4628-b207-607858e6a4c6
+x
+java:S1481i"0Remove this unused "resultList3" local variable.(»¤Ú¸ıÿÿÿÿ8·áŠè2J$5547e38d-aa69-4eda-8217-671e753cdec5
+r	java:S106{"+Replace this use of System.out by a logger.(Ì’¼÷üÿÿÿÿ8·áŠè2J$281b2c52-33d8-42ee-8ada-cf8673e60fdb
+v
+java:S1135…"2Complete the task associated to this TODO comment.(˜‘µ…8å³©è2J$0b5206b8-a97c-4599-a6e4-2384be5dd69d
 q
-java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8É˜ñÔ2J$fe982d81-f83c-4b5e-80eb-9fd6935fad61
+java:S1128"/Remove this unused import 'jpql.dto.MemberDto'.(ÔõäT8¸áŠè2J$62901b62-f854-4758-b759-3466dd8dd904
 r
-java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8É˜ñÔ2J$64915eb6-07b1-4de6-8647-48da9f9771f6
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8¸áŠè2J$781b264c-4c93-43f0-874e-007e8499c026
